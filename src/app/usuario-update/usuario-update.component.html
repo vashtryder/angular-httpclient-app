@@ -1,0 +1,23 @@
+<div class="container custom-container">
+    <div class="col-md-12">
+
+        <h3 class="mb-3 text-center">Detalle del Usuario</h3>
+
+        <div class="form-group">
+            <input type="text" [(ngModel)]="usuarioData.data.first_name" class="form-control" placeholder="first_name">
+        </div>
+
+        <div class="form-group">
+            <input type="text" [(ngModel)]="usuarioData.data.last_name" class="form-control" placeholder="last_name">
+        </div>
+
+        <div class="form-group">
+            <img [src]="usuarioData.data.avatar" class="img-fluid" alt="">
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-success btn-lg btn-block" (click)="editUsuario()">Update Employee</button>
+        </div>
+
+    </div>
+</div>
